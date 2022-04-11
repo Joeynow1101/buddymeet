@@ -1,0 +1,10 @@
+<div class="default-card padding-1 buddy-row">
+
+  <div *ngIf="fs.names.length === 0" >
+    You don't have any buddies yet ☹
+  </div>
+
+  <div class="friend-box" *ngFor="let name of fs.names; let i = index">
+    <img src="{{ fs.images[i] }}" />{{ name }}
+  </div>
+</div>

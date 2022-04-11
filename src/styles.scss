@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #30475e;
+  font-family: "Oswald", sans-serif;
+}
+.margin-b {
+  margin: 1rem;
+}
+
+.padding-1 {
+  padding: 1rem;
+}
+
+.default-card {
+  background-color: #f5f5f5;
+  width: 600px;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

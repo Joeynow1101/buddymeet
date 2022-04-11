@@ -1,0 +1,11 @@
+<app-profile-row [canFollow]="false"></app-profile-row>
+<div class="text margin-b">
+  <b>Buddy suggestions</b>
+</div>
+
+<app-profile-row
+  *ngFor="let i of [0, 1, 2, 3, 4, 5, 6]"
+  [name]="names[i]"
+  [gender]="gender[i]"
+  [img]="img[i]"
+></app-profile-row>
