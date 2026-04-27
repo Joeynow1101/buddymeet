@@ -1,14 +1,13 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { MatIcon } from '@angular/material/icon';
 
 @Component({
   selector: 'app-profile-card',
   templateUrl: './profile-card.component.html',
   styleUrls: ['./profile-card.component.scss'],
+  imports: [MatIcon],
 })
-export class ProfileCardComponent implements OnInit {
+export class ProfileCardComponent {
   @Input() text: string = '';
-  @Input() imgage: string = '';
-  constructor() {}
-
-  ngOnInit(): void {}
+  @Input() image: string = '';
 }

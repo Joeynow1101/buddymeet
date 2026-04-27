@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FriendService } from '../friend.service';
 
 @Component({
@@ -6,8 +6,6 @@ import { FriendService } from '../friend.service';
   templateUrl: './buddybox.component.html',
   styleUrls: ['./buddybox.component.scss'],
 })
-export class BuddyBoxComponent implements OnInit {
-  constructor(public fs: FriendService) {}
-
-  ngOnInit(): void {}
+export class BuddyBoxComponent {
+  fs = inject(FriendService);
 }

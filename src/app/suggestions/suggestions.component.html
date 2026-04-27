@@ -3,9 +3,10 @@
   <b>Buddy suggestions</b>
 </div>
 
-<app-profile-row
-  *ngFor="let i of [0, 1, 2, 3, 4, 5, 6]"
-  [name]="names[i]"
-  [gender]="gender[i]"
-  [img]="img[i]"
-></app-profile-row>
+@for (suggestion of suggestions; track suggestion.name) {
+  <app-profile-row
+    [name]="suggestion.name"
+    [gender]="suggestion.gender"
+    [img]="suggestion.image"
+  ></app-profile-row>
+}
